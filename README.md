@@ -26,3 +26,19 @@ for(int i = 0; i < str.length(); i++){
 }
 ```
 
+
+### Repeating elements in integer array 
+``` typescript
+        for (i = 0; i < size-1; i++){
+            for (j = i + 1; j < size; j++){
+                if (arr[i] == arr[j])
+                    System.out.print(arr[i] + " ");
+            }
+        }
+```
+
+## Complexity O(n*n)
+
+
+
+
