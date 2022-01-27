@@ -2,7 +2,7 @@
 
 ## String
 
-### Reverse the word (accd => dcca)
+### Reverse the word (accd -> dcca)
 
 ```typescript
 for(int i = 0; i < str.length(); i++){
@@ -11,7 +11,7 @@ for(int i = 0; i < str.length(); i++){
 }
 ```
 
-### Reverse the sentence (i love pooh => pooh love i)
+### Reverse the sentence (i love pooh -> pooh love i)
 
 ```typescript
 
