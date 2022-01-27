@@ -49,14 +49,13 @@ for (int i = 0; i < len; i++) {
       ch[i] = str.charAt(i);
       int find = 0;
       for (int j = 0; j <= i; j++) {
-          if (str.charAt(i) == ch[j])
-              find++;
+          if (str.charAt(i) == ch[j]){
+                  find++;
+              }
       }
-      if (find == 1)
-          System.out.println(
-              "Number of Occurrence of "
-              + str.charAt(i)
-              + " is:" + count[str.charAt(i)]);
+      if (find == 1){
+          System.out.println("Number of Occurrence of "+ str.charAt(i)+ " is:" + count[str.charAt(i)]);
+      }
  }
 ```
 
