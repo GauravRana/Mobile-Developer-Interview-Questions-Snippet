@@ -1,6 +1,6 @@
 # Mobile-Developer-Interview-Questions-Snippet
 
-## String
+# String
 
 ### Reverse the word (accd -> dcca)
 
