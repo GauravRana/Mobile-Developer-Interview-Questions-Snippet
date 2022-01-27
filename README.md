@@ -42,8 +42,9 @@ for (i = 0; i < size-1; i++){
 ```typscript
 int count[] = new int[MAX_CHAR];
 int len = str.length();
-for (int i = 0; i < len; i++)
-count[str.charAt(i)]++;
+for (int i = 0; i < len; i++){
+    count[str.charAt(i)]++;
+}
 char ch[] = new char[str.length()];
 for (int i = 0; i < len; i++) {
       ch[i] = str.charAt(i);
