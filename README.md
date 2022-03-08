@@ -66,6 +66,9 @@ for (int i = 0; i < len; i++) {
 ### Simple stack
 
 ```typescript
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
 class Stack {
     int arr[];
     int top = 0;
@@ -102,7 +105,7 @@ class Stack {
     
     public void printStack(){
         for (int i = 0; i <= top; i++){
-            System.out.println("" + arr[i]);
+            System.out.println(arr[i]+"\n");
         }
     }
     
@@ -111,9 +114,14 @@ class Stack {
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        
+        stack.push(4);
+        stack.push(5);
+        stack.printStack();
+        System.out.print("pop called \n");
+        stack.pop();
         stack.printStack();
     }
+}
 }
 ```
 
