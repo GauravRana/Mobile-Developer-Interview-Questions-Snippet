@@ -125,4 +125,90 @@ class Stack {
 }
 ```
 
+# Queue
+
+### Simple queue
+
+```typescript
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Queue {
+    int arr[];
+    int front = 0;
+    int rear = 0;
+    int SIZE = 0;
+
+    Queue(int size){
+        arr = new int[size];
+        front = -1;
+        rear = -1;
+        SIZE = size;
+    }
+    public void enqueue(int element){
+        if(isFull()){
+            System.out.println("Queue Full");
+            System.exit(1);
+        }
+        if(front == -1)
+            front = 0;
+        rear++;
+        arr[rear] = element;
+        System.out.println("Deleted -> " + element);
+    }
+    
+    public int dequeue(){
+        int element = 0;
+        if(isEmpty()){
+            System.out.println("Queue Empty");
+            System.exit(1);
+        }else{
+            element = arr[front];
+            if(front >= rear){
+                front = -1;
+                rear = -1;
+            }else{
+                front++;
+            }
+            System.out.println("Deleted -> " + element);
+        }
+        return element;
+    }
+    
+    public boolean isFull(){
+        if(front == 0 && rear == SIZE - 1){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    
+    public boolean isEmpty(){
+        return front == -1;
+    }
+    
+    public void printStack(){
+        for (int i = 0; i <= rear; i++){
+            System.out.println(arr[i]+"\n");
+        }
+    }
+    
+    public static void main(String[] args) {
+        Queue queue = new Queue(5);
+        queue.enqueue(1);
+        queue.enqueue(2);
+        queue.enqueue(3);
+        queue.enqueue(4);
+        queue.enqueue(5);
+        queue.printStack();
+        System.out.print("dequeue called \n");
+        queue.dequeue();
+        queue.printStack();
+    }
+}
+```
+
+
+
+
 
